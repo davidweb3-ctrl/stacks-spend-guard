@@ -93,7 +93,7 @@ The contract is a non-custodial developer proof. It records spend limits and rec
 
 ## Next Action
 
-Talent impact still shows zero after confirmed usage transactions. Ask Talent support / inspect the copied impact query with the deploy tx and two usage txs as evidence.
+Talent impact still shows zero after confirmed usage transactions. The copied chart query reads Talent backend `data_point_updated` events for slug `transacting_users`, not Stacks chain data directly. Ask Talent support why no data point has been published for the verified Stacks contract and usage txs.
 
 ## Follow-Up
 

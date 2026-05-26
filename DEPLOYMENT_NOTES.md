@@ -47,19 +47,46 @@ Practical funding recommendation before deployment:
 
 Expected actual transaction fee should likely be much lower than that, but this buffer avoids failed deployment attempts if the wallet suggests a higher fee.
 
+## Mainnet Plan Generated
+
+Generated on 2026-05-26:
+
+```bash
+clarinet deployments generate --mainnet --low-cost
+```
+
+Generated file:
+
+```text
+deployments/default.mainnet-plan.yaml
+```
+
+Plan summary:
+
+```text
+transaction-type: contract-publish
+contract-name: stacks-spend-guard
+expected-sender: SPMFETRXF1CG8YMBX29M2RT1HNRS7JYWFDN31XZ4
+cost: 921103 micro-STX = 0.921103 STX
+clarity-version: 4
+```
+
+This exceeds the original `0.05 STX` deployment budget. Do not run `clarinet deployments apply --mainnet` until the user explicitly approves spending about `0.921103 STX` for the mainnet deployment.
+
 ## Deployment Path
 
 Preferred:
 
 1. Create or use a low-balance Leather or Xverse wallet.
-2. Fund only the approved small STX amount.
-3. Deploy `contracts/stacks-spend-guard.clar` as contract name:
+2. Fund only the approved STX amount.
+3. Generate the mainnet deployment plan and inspect the fee.
+4. Deploy `contracts/stacks-spend-guard.clar` as contract name only after approving the fee:
 
 ```text
 stacks-spend-guard
 ```
 
-4. After deployment, add the contract principal to Talent:
+5. After deployment, add the contract principal to Talent:
 
 ```text
 SP...address.stacks-spend-guard

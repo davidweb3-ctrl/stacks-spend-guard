@@ -1,0 +1,17 @@
+id: 0
+name: Mainnet deployment
+network: mainnet
+stacks-node: https://api.hiro.so
+bitcoin-node: http://blockstack:blockstacksystem@bitcoin.blockstack.com:8332
+plan:
+  batches:
+  - id: 0
+    transactions:
+    - transaction-type: contract-publish
+      contract-name: stacks-spend-guard
+      expected-sender: SPMFETRXF1CG8YMBX29M2RT1HNRS7JYWFDN31XZ4
+      cost: 921103
+      path: contracts/stacks-spend-guard.clar
+      anchor-block-only: true
+      clarity-version: 4
+    epoch: '3.3'

@@ -75,13 +75,25 @@ contract: SPMFETRXF1CG8YMBX29M2RT1HNRS7JYWFDN31XZ4.stacks-spend-guard
 result: Deployer wallet verified. Smart contract has been added to this project.
 ```
 
+## Usage Activity
+
+Confirmed on 2026-05-26:
+
+```text
+set-monthly-limit tx:
+0x3bca51f07c8888c2307b7c9ada1516b987f3a6f78f46aa22740f03b5f151ef38
+
+record-spend tx:
+0x21f27d92597693ddfe11b86802956744a7f2eef615e398319e203d2b9da5112c
+```
+
 ## Boundary
 
 The contract is a non-custodial developer proof. It records spend limits and receipts only. It does not transfer, approve, custody, swap, borrow, lend, or route funds.
 
 ## Next Action
 
-Create 1-2 legitimate onchain interaction transactions against the deployed contract, then re-check Talent impact and Stacks Builder Rewards leaderboard inclusion after refresh.
+Re-check Talent impact and Stacks Builder Rewards leaderboard inclusion after Talent indexes the usage transactions.
 
 ## Follow-Up
 

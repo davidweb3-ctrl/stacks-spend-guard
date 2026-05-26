@@ -21,7 +21,7 @@ Stacks Spend Guard
 Status:
 
 ```text
-ACTIVE
+WAITING
 ```
 
 ## Purpose
@@ -93,8 +93,12 @@ The contract is a non-custodial developer proof. It records spend limits and rec
 
 ## Next Action
 
-Talent impact still shows zero after confirmed usage transactions. The copied chart query reads Talent backend `data_point_updated` events for slug `transacting_users`, not Stacks chain data directly. Ask Talent support why no data point has been published for the verified Stacks contract and usage txs.
+Talent impact still shows zero after confirmed usage transactions. The copied chart query reads Talent backend `data_point_updated` events for slug `transacting_users`, not Stacks chain data directly.
+
+Talent Support bug report was submitted on 2026-05-26. The ticket included the Talent project/profile, contract principal, deploy tx, usage txs, GitHub repo, network, contract address, wallet address, and asked whether Stacks contract calls are currently indexed for Builder Rewards / leaderboard eligibility.
+
+Wait for Talent Support reply or backend index refresh before spending more STX.
 
 ## Follow-Up
 
-2026-05-26
+2026-05-27

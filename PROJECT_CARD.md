@@ -81,7 +81,7 @@ The contract is a non-custodial developer proof. It records spend limits and rec
 
 ## Next Action
 
-Return to the Stacks Builder Rewards page and confirm leaderboard / participation inclusion after Talent refresh.
+Use the Stacks Builder Rewards page `Add Project` button to attach the existing `Stacks Spend Guard` project to the campaign, then confirm leaderboard / participation inclusion.
 
 ## Follow-Up
 

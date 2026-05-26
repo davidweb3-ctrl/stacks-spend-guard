@@ -65,13 +65,23 @@ final cost: 28230 micro-STX = 0.02823 STX
 
 Clarinet initially generated a higher plan cost, then recomputed and overwrote the plan with the lower final cost during apply.
 
+## Talent Data Source
+
+Added on 2026-05-26:
+
+```text
+chain: Stacks
+contract: SPMFETRXF1CG8YMBX29M2RT1HNRS7JYWFDN31XZ4.stacks-spend-guard
+result: Deployer wallet verified. Smart contract has been added to this project.
+```
+
 ## Boundary
 
 The contract is a non-custodial developer proof. It records spend limits and receipts only. It does not transfer, approve, custody, swap, borrow, lend, or route funds.
 
 ## Next Action
 
-Add `SPMFETRXF1CG8YMBX29M2RT1HNRS7JYWFDN31XZ4.stacks-spend-guard` to Talent as the tracked Stacks smart contract.
+Return to the Stacks Builder Rewards page and confirm leaderboard / participation inclusion after Talent refresh.
 
 ## Follow-Up
 

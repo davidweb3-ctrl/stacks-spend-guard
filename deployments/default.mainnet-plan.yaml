@@ -10,7 +10,7 @@ plan:
     - transaction-type: contract-publish
       contract-name: stacks-spend-guard
       expected-sender: SPMFETRXF1CG8YMBX29M2RT1HNRS7JYWFDN31XZ4
-      cost: 921103
+      cost: 28230
       path: contracts/stacks-spend-guard.clar
       anchor-block-only: true
       clarity-version: 4

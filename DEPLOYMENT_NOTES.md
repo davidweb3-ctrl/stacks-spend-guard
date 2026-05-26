@@ -61,7 +61,7 @@ Generated file:
 deployments/default.mainnet-plan.yaml
 ```
 
-Plan summary:
+Initial plan summary:
 
 ```text
 transaction-type: contract-publish
@@ -71,7 +71,22 @@ cost: 921103 micro-STX = 0.921103 STX
 clarity-version: 4
 ```
 
-This exceeds the original `0.05 STX` deployment budget. Do not run `clarinet deployments apply --mainnet` until the user explicitly approves spending about `0.921103 STX` for the mainnet deployment.
+The first generated cost exceeded the original `0.05 STX` deployment budget, so it was treated as an approval gate.
+
+When applying the deployment, Clarinet recomputed and overwrote the plan with a lower cost:
+
+```text
+cost: 28230 micro-STX = 0.02823 STX
+```
+
+Mainnet deployment succeeded:
+
+```text
+contract: SPMFETRXF1CG8YMBX29M2RT1HNRS7JYWFDN31XZ4.stacks-spend-guard
+tx: 0x8f4441f725aac7337eb6cf1b80eb8013637430530adecce337e63a7403d9d980
+block: 8089390
+result: (ok true)
+```
 
 ## Deployment Path
 
@@ -89,7 +104,7 @@ stacks-spend-guard
 5. After deployment, add the contract principal to Talent:
 
 ```text
-SP...address.stacks-spend-guard
+SPMFETRXF1CG8YMBX29M2RT1HNRS7JYWFDN31XZ4.stacks-spend-guard
 ```
 
 ## References

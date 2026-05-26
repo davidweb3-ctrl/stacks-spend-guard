@@ -52,17 +52,18 @@ npm test
 DEPLOYMENT_NOTES.md
 ```
 
-## Mainnet Plan
+## Mainnet Deployment
 
-Generated on 2026-05-26:
+Deployed on 2026-05-26:
 
 ```text
 deployments/default.mainnet-plan.yaml
 contract: SPMFETRXF1CG8YMBX29M2RT1HNRS7JYWFDN31XZ4.stacks-spend-guard
-cost: 921103 micro-STX = 0.921103 STX
+tx: 0x8f4441f725aac7337eb6cf1b80eb8013637430530adecce337e63a7403d9d980
+final cost: 28230 micro-STX = 0.02823 STX
 ```
 
-This is above the original `0.05 STX` deployment budget and requires explicit user approval before applying the mainnet deployment.
+Clarinet initially generated a higher plan cost, then recomputed and overwrote the plan with the lower final cost during apply.
 
 ## Boundary
 
@@ -70,7 +71,7 @@ The contract is a non-custodial developer proof. It records spend limits and rec
 
 ## Next Action
 
-Approve or reject the `0.921103 STX` mainnet deployment cost. If approved, run `clarinet deployments apply --mainnet`, then add `SPMFETRXF1CG8YMBX29M2RT1HNRS7JYWFDN31XZ4.stacks-spend-guard` to Talent.
+Add `SPMFETRXF1CG8YMBX29M2RT1HNRS7JYWFDN31XZ4.stacks-spend-guard` to Talent as the tracked Stacks smart contract.
 
 ## Follow-Up
 
